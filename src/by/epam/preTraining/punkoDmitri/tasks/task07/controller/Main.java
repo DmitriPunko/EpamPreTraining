@@ -4,7 +4,7 @@ import by.epam.preTraining.punkoDmitri.tasks.task07.util.Creator;
 import by.epam.preTraining.punkoDmitri.tasks.task07.model.entities.PassengerCar;
 import by.epam.preTraining.punkoDmitri.tasks.task07.model.entities.Truck;
 import by.epam.preTraining.punkoDmitri.tasks.task07.model.entities.Vehicle;
-import by.epam.preTraining.punkoDmitri.tasks.task07.model.entities.VehicleService;
+import by.epam.preTraining.punkoDmitri.tasks.task07.model.logic.VehicleService;
 import by.epam.preTraining.punkoDmitri.tasks.task07.model.entities.VehicleArray;
 import by.epam.preTraining.punkoDmitri.tasks.task07.model.entities.VehicleList;
 import by.epam.preTraining.punkoDmitri.tasks.task07.view.ConsolePrinter;
