@@ -99,6 +99,11 @@ public class VehicleArray implements Storable {
         return vehicles[index];
     }
 
+    public void set(int index, Vehicle element) {
+        rangeCheck(index);
+        vehicles[index] = element;
+    }
+
     public void remove(int index) {
         rangeCheck(index);
 
