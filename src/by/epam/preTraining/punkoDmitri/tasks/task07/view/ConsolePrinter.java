@@ -5,10 +5,15 @@ import by.epam.preTraining.punkoDmitri.tasks.task07.model.logic.Storable;
 
 public class ConsolePrinter {
     public static void print(Vehicle vehicle) {
-        System.out.println(vehicle.toString());
+        if (vehicle != null) {
+            System.out.println(vehicle.toString());
+        } else System.out.println("null");
+
     }
 
     public static void print(Storable printable) {
-        System.out.println(printable.toString());
+        if (printable != null) {
+            System.out.println(printable.toString());
+        } else System.out.println("null");
     }
 }
