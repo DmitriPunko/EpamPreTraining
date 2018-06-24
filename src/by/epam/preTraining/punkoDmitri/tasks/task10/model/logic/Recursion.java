@@ -2,8 +2,14 @@ package by.epam.preTraining.punkoDmitri.tasks.task10.model.logic;
 
 public class Recursion {
 
+    public static final int INVALID_INPUT = -1;
+
     public static int getSumOfDigitsOfNumb(int number) {
         final int BORDER_OF_TWO_DIGITS_NUMBER = 10;
+
+        if (number < 0) {
+            return INVALID_INPUT;
+        }
 
         if (number >= BORDER_OF_TWO_DIGITS_NUMBER) {
             return getSumOfDigitsOfNumb(number / 10) + number % 10;
@@ -11,7 +17,7 @@ public class Recursion {
     }
 
     public static double pow(double x, int n) {
-        if (x == 0 || n < 0) return x;
+        if (x == 0 || n < 0) return INVALID_INPUT;
         if (n == 0) return 1;
         return pow(x, n - 1) * x;
     }
@@ -23,7 +29,7 @@ public class Recursion {
     }
 
     public static long getFibNumbByIndex(int index) {
-        if (index <= 0) return -1;
+        if (index <= 0) return INVALID_INPUT;
         if (index <= 2) return index - 1;
         return getFibNumbByIndex(index - 1) + getFibNumbByIndex(index - 2);
     }
